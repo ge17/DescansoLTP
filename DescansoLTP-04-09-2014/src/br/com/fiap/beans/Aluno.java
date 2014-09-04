@@ -5,7 +5,7 @@ public class Aluno implements Comparable<Aluno> {
 	private String nome;
 	private int falta;
 	private int idade;
-	private int media;
+	private double media;
 	
 	public int comparaTo(Aluno outroAluno){
 		if (media < outroAluno.getMedia()){
@@ -26,7 +26,7 @@ public class Aluno implements Comparable<Aluno> {
 		super();
 		
 	}
-	public Aluno(String nome, int media, int falta, int idade) {
+	public Aluno(String nome, double media, int falta, int idade) {
 		super();
 		this.nome = nome;
 		this.falta = falta;
@@ -52,10 +52,10 @@ public class Aluno implements Comparable<Aluno> {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	public int getMedia() {
+	public double getMedia() {
 		return media;
 	}
-	public void setMedia(int media) {
+	public void setMedia(double media) {
 		this.media = media;
 	}
 
